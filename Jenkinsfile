@@ -19,11 +19,6 @@ pipeline {
                 sh "mvn compile"
             }
         }
-        stage('Trivy FS') {
-            steps {
-                sh "trivy fs . --format table -o fs.html"
-            }
-        }
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('sonarqubeServer') {
