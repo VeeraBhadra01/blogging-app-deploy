@@ -84,7 +84,7 @@
 				<executions>
 					<execution>
 						<goals>
-							<goal>mvn deploy</goal>
+							<goal>prepare-agent</goal>
 						</goals>
 					</execution>
 					<execution>
